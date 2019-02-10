@@ -14,8 +14,7 @@ namespace dotnetcore_sample
 {
     public class Startup
     {
-        // introduced typo to test build failures
-        pubic Startup(IHostingEnvironment env)
+        public Startup(IHostingEnvironment env)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string appSettingsFilePath = Path.Combine(assemblyFolder,"appsettings.json");
